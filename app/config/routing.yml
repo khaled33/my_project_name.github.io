@@ -1,0 +1,18 @@
+khaled:
+    resource: "@khaledBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+emploiyer:
+    resource: "@EmploiyerBundle/Controller/"
+    type:     annotation
+    prefix:   /
+
+blog:
+    resource: "@BlogBundle/Controller/"
+    type:     annotation
+    prefix:   /blog
+
+app:
+    resource: '@AppBundle/Controller/'
+    type: annotation
