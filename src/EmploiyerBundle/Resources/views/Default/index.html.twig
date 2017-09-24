@@ -255,7 +255,7 @@
                     <!-- bottan ajout-->
 
                     <!-- Trigger the modal with a button -->
-                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal"> <span class="glyphicon glyphicon-plus"></span> Ajouter un rapport</button>
+                    <button type="button" class="btn btn-success btn-sm" data-toggle="modal" data-target="#myModal"> <span class="glyphicon glyphicon-plus"></span> Ajouter un emploiyers</button>
 
                     <!-- Modal -->
                     <div class="modal fade" id="myModal" role="dialog">
@@ -307,7 +307,7 @@
                         <td class="center"> {{ e.nationalite }}  </td>
 
                         <td class="center">
-                            <a class="btn btn-success btn-xs" href=" ">
+                            <a class="btn btn-success btn-xs" href="{{ path('ajoutAbsence', {'id': e.id}  ) }} ">
                                 <i class="glyphicon glyphicon-zoom-in icon-white"></i>
                                 ajouter absence
                             </a>

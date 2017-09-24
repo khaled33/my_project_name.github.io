@@ -38,7 +38,7 @@ class DefaultController extends Controller
            $em->persist($emp);
            $em->flush();
        }
-echo "khaled";
+
         $employe=$this->getDoctrine()->getRepository("EmploiyerBundle:Employe")->findAll();
 
     return $this->render('EmploiyerBundle:Default:index.html.twig',
