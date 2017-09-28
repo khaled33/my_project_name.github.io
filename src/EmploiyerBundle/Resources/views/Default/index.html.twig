@@ -311,11 +311,11 @@
                                 <i class="glyphicon glyphicon-zoom-in icon-white"></i>
                                 ajouter absence
                             </a>
-                            <a class="btn btn-info btn-xs" href=" ">
+                            <a class="btn btn-info btn-xs" href="{{ path('modifemployer', {'id': e.id}  ) }}  ">
                                 <i class="glyphicon glyphicon-edit icon-white"></i>
                                 Edit
                             </a>
-                            <a class="btn btn-danger btn-xs sup" href=" ">
+                            <a class="btn btn-danger btn-xs sup"href="{{ path('supprimmer', {'id': e.id}  ) }}  ">
                                 <i class="glyphicon glyphicon-trash icon-white"></i>
                                 Delete
                             </a>

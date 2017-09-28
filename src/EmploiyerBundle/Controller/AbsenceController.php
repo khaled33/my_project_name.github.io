@@ -46,6 +46,14 @@ class AbsenceController extends Controller
 
      if ($form->isValid() && $form->isSubmitted()){
 
+
+    $repository = $this->getDoctrine()->getManager()->getRepository('EmploiyerBundle:Employe');
+    $employer = $repository->findOneBy(array('id' => $id));
+
+    $absence->setEmploye($employer);
+
+
+
             $em=$this->getDoctrine()->getManager();
             $em->persist($absence);
             $em->flush();
@@ -70,6 +78,9 @@ class AbsenceController extends Controller
     return $this->render('EmploiyerBundle:Default:ListeAbsence.html.twig',
         array('listAbsence'=>$ListeAbsence));
     }
+
+
+
 
 
 
