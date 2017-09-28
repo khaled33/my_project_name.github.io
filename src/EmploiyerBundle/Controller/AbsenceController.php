@@ -45,7 +45,7 @@ class AbsenceController extends Controller
 
 
      if ($form->isValid() && $form->isSubmitted()){
-             $absence->setIdEmp($id);
+
             $em=$this->getDoctrine()->getManager();
             $em->persist($absence);
             $em->flush();

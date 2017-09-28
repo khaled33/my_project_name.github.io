@@ -21,12 +21,7 @@ class absence
      */
     private $id;
 
-    /**
-     * @var int
-     *
-     * @ORM\Column(name="id_emp", type="integer")
-     */
-    private $id_emp;
+
 
     /**
      * @var \DateTime
@@ -56,6 +51,10 @@ class absence
      */
     private $status;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="Employe")
+     */
+    private $Employe;
 
     /**
      * Get id
@@ -65,6 +64,14 @@ class absence
     public function getId()
     {
         return $this->id;
+    }
+
+    /**
+     * @param int $id
+     */
+    public function setId ($id)
+    {
+        $this->id = $id;
     }
 
     /**
@@ -164,19 +171,20 @@ class absence
     }
 
     /**
-     * @return int
+     * @return mixed
      */
-    public function getIdEmp ()
+    public function getEmploye ()
     {
-        return $this->id_emp;
+        return $this->Employe;
     }
 
     /**
-     * @param int $id_emp
+     * @param mixed $Employe
      */
-    public function setIdEmp ($id_emp)
+    public function setEmploye ($Employe)
     {
-        $this->id_emp = $id_emp;
+        $this->Employe = $Employe;
     }
+
 }
 

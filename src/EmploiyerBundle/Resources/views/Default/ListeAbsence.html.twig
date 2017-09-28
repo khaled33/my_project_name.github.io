@@ -262,8 +262,8 @@
             <tbody>
             {% for l in listAbsence %}
             <tr>
-                <td></td>
-                <td></td>
+                <td>{{ l.Employe.nom }}</td>
+                <td> {{ l.Employe.prenom }}</td>
                 <td>{{ l.remarque }}</td>
                 <td>{{ l.status }}</td>
                 <td>{{ l.debut|date("m/d/Y") }}</td>
