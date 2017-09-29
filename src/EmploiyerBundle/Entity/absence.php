@@ -8,9 +8,9 @@ use Doctrine\ORM\Mapping as ORM;
  * absence
  *
  * @ORM\Table(name="absence")
- * @ORM\Entity(repositoryClass="EmploiyerBundle\Repository\absenceRepository")
+ * @ORM\Entity(repositoryClass="EmploiyerBundle\Repository\AbsenceRepository")
  */
-class absence
+class Absence
 {
     /**
      * @var int
@@ -21,6 +21,11 @@ class absence
      */
     private $id;
 
+    /**
+     * @ORM\ManyToOne(targetEntity="Employe")
+     * @ORM\joinColumn(onDelete="cascade", nullable=true)
+     */
+    private $Employe;
 
 
     /**
@@ -51,12 +56,7 @@ class absence
      */
     private $status;
 
-    /**
-     * @ORM\ManyToOne(targetEntity="Employe")
-     * @ORM\joinColumn(onDelete="CASCADE", nullable=true)
-     */
-    private $Employe;
-
+    
     /**
      * Get id
      *
