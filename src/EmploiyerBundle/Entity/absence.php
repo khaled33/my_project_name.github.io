@@ -53,6 +53,7 @@ class absence
 
     /**
      * @ORM\ManyToOne(targetEntity="Employe")
+     * @ORM\joinColumn(onDelete="CASCADE", nullable=true)
      */
     private $Employe;
 
