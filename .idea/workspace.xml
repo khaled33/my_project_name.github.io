@@ -2,12 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="717dab8a-799c-45e0-979f-036dc9e189f2" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/ListeAbsenceByemployer.html.twig" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/EmploiyerBundle/Repository/absenceRepository.php" afterPath="$PROJECT_DIR$/src/EmploiyerBundle/Repository/AbsenceRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EmploiyerBundle/Controller/AbsenceController.php" afterPath="$PROJECT_DIR$/src/EmploiyerBundle/Controller/AbsenceController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EmploiyerBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/EmploiyerBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EmploiyerBundle/Entity/Absence.php" afterPath="$PROJECT_DIR$/src/EmploiyerBundle/Entity/Absence.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/ListeAbsenceByemployer.html.twig" afterPath="$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/ListeAbsenceByemployer.html.twig" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -125,8 +120,8 @@
       <file leaf-file-name="ListeAbsenceByemployer.html.twig" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/ListeAbsenceByemployer.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="549">
-              <caret line="271" column="48" lean-forward="false" selection-start-line="271" selection-start-column="48" selection-end-line="271" selection-end-column="48" />
+            <state relative-caret-position="345">
+              <caret line="259" column="27" lean-forward="false" selection-start-line="259" selection-start-column="27" selection-end-line="259" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -445,15 +440,15 @@
       <workItem from="1506040660745" duration="26049000" />
       <workItem from="1506207210437" duration="13894000" />
       <workItem from="1506555341644" duration="12657000" />
-      <workItem from="1506725955717" duration="7691000" />
+      <workItem from="1506725955717" duration="8113000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="66752000" />
+    <option name="totallyTimeSpent" value="67174000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2118003" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -899,8 +894,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/ListeAbsenceByemployer.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="549">
-          <caret line="271" column="48" lean-forward="false" selection-start-line="271" selection-start-column="48" selection-end-line="271" selection-end-column="48" />
+        <state relative-caret-position="345">
+          <caret line="259" column="27" lean-forward="false" selection-start-line="259" selection-start-column="27" selection-end-line="259" selection-end-column="27" />
           <folding />
         </state>
       </provider>
