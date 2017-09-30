@@ -2,8 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="717dab8a-799c-45e0-979f-036dc9e189f2" name="Default" comment="">
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/EmploiyerBundle/Entity/absence.php" afterPath="$PROJECT_DIR$/src/EmploiyerBundle/Entity/Absence.php" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/ListeAbsenceByemployer.html.twig" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/EmploiyerBundle/Repository/absenceRepository.php" afterPath="$PROJECT_DIR$/src/EmploiyerBundle/Repository/AbsenceRepository.php" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EmploiyerBundle/Controller/AbsenceController.php" afterPath="$PROJECT_DIR$/src/EmploiyerBundle/Controller/AbsenceController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EmploiyerBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/EmploiyerBundle/Controller/DefaultController.php" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/EmploiyerBundle/Entity/Absence.php" afterPath="$PROJECT_DIR$/src/EmploiyerBundle/Entity/Absence.php" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -27,7 +31,7 @@
       <file leaf-file-name="Employe.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Entity/Employe.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="203">
+            <state relative-caret-position="952">
               <caret line="56" column="26" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="26" />
               <folding />
             </state>
@@ -37,8 +41,8 @@
       <file leaf-file-name="DefaultController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Controller/DefaultController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="296">
-              <caret line="88" column="51" lean-forward="false" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
+            <state relative-caret-position="1683">
+              <caret line="99" column="84" lean-forward="false" selection-start-line="99" selection-start-column="84" selection-end-line="99" selection-end-column="84" />
               <folding>
                 <element signature="e#47#82#0#PHP" expanded="true" />
               </folding>
@@ -46,38 +50,18 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Absence.php" pinned="false" current-in-tab="true">
+      <file leaf-file-name="Absence.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Entity/Absence.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="119">
-              <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+            <state relative-caret-position="202">
+              <caret line="108" column="28" lean-forward="false" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="28" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="EmploiyerBundle.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/EmploiyerBundle.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="absenceRepository.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Repository/absenceRepository.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="0">
-              <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="autoload.php" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/autoload.php">
+      <file leaf-file-name="AbsenceRepository.php" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Repository/AbsenceRepository.php">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="0">
               <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
@@ -89,12 +73,10 @@
       <file leaf-file-name="AbsenceController.php" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Controller/AbsenceController.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-125">
-              <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
+            <state relative-caret-position="318">
+              <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
               <folding>
                 <element signature="e#128#163#0#PHP" expanded="true" />
-                <marker date="1506648064786" expanded="true" signature="682:1115" ph="{...}" />
-                <marker date="1506648064786" expanded="true" signature="1113:1115" ph="..." />
               </folding>
             </state>
           </provider>
@@ -103,7 +85,7 @@
       <file leaf-file-name="modifeEmploye.html.twig" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/modifeEmploye.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="135">
+            <state relative-caret-position="4675">
               <caret line="275" column="61" lean-forward="false" selection-start-line="275" selection-start-column="61" selection-end-line="275" selection-end-column="61" />
               <folding />
             </state>
@@ -120,11 +102,31 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.html.twig" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/index.html.twig">
+      <file leaf-file-name="ListeAbsence.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/ListeAbsence.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-78">
-              <caret line="313" column="87" lean-forward="false" selection-start-line="313" selection-start-column="87" selection-end-line="313" selection-end-column="87" />
+            <state relative-caret-position="-204">
+              <caret line="265" column="37" lean-forward="false" selection-start-line="265" selection-start-column="37" selection-end-line="265" selection-end-column="37" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ajoutAbsence.html.twig" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/ajoutAbsence.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-204">
+              <caret line="285" column="26" lean-forward="false" selection-start-line="285" selection-start-column="26" selection-end-line="285" selection-end-column="26" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ListeAbsenceByemployer.html.twig" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/ListeAbsenceByemployer.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="549">
+              <caret line="271" column="48" lean-forward="false" selection-start-line="271" selection-start-column="48" selection-end-line="271" selection-end-column="48" />
               <folding />
             </state>
           </provider>
@@ -137,6 +139,8 @@
       <find>#nom</find>
       <find>class=&quot;table-responsive&quot;</find>
       <find>abs</find>
+      <find>absence</find>
+      <find>emp</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -157,12 +161,13 @@
         <option value="$PROJECT_DIR$/src/EmploiyerBundle/Controller/Absence.php" />
         <option value="$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/ajoutAbsence.html.twig" />
         <option value="$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/ListeAbsence.html.twig" />
-        <option value="$PROJECT_DIR$/src/EmploiyerBundle/Controller/AbsenceController.php" />
         <option value="$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/modifeEmploye.html.twig" />
         <option value="$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/index.html.twig" />
-        <option value="$PROJECT_DIR$/src/EmploiyerBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/EmploiyerBundle/Entity/absence.php" />
+        <option value="$PROJECT_DIR$/src/EmploiyerBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/EmploiyerBundle/Entity/Absence.php" />
+        <option value="$PROJECT_DIR$/src/EmploiyerBundle/Controller/AbsenceController.php" />
+        <option value="$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/ListeAbsenceByemployer.html.twig" />
       </list>
     </option>
   </component>
@@ -226,8 +231,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="Scratches" />
+      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -290,7 +295,15 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Entity" />
+              <option name="myItemId" value="Resources" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Default" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -312,7 +325,7 @@
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Controller" />
+              <option name="myItemId" value="Resources" />
               <option name="myItemType" value="com.jetbrains.php.projectView.PhpTreeStructureProvider$1" />
             </PATH_ELEMENT>
           </PATH>
@@ -432,42 +445,35 @@
       <workItem from="1506040660745" duration="26049000" />
       <workItem from="1506207210437" duration="13894000" />
       <workItem from="1506555341644" duration="12657000" />
+      <workItem from="1506725955717" duration="7691000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="57420000" />
+    <option name="totallyTimeSpent" value="66752000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="7" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20877458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2118003" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20637329" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.38239756" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
-      <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="true" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.57056147" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20877458" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Inspection Results" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32980332" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
     </layout>
     <layout-to-restore>
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -527,28 +533,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/ajoutAbsence.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4777">
-          <caret line="281" column="19" lean-forward="false" selection-start-line="281" selection-start-column="19" selection-end-line="281" selection-end-column="19" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="0">
-          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/Resources/views/base.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="51">
-          <caret line="3" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="350" selection-end-column="7" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/web/css/sb-admin.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -580,8 +564,6 @@
           <caret line="43" column="89" lean-forward="false" selection-start-line="43" selection-start-column="89" selection-end-line="43" selection-end-column="89" />
           <folding>
             <element signature="e#128#163#0#PHP" expanded="true" />
-            <marker date="1506648064786" expanded="true" signature="682:1115" ph="{...}" />
-            <marker date="1506648064786" expanded="true" signature="1113:1115" ph="..." />
           </folding>
         </state>
       </provider>
@@ -635,14 +617,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <marker date="1506118937848" expanded="true" signature="172:1343" ph="{...}" />
-            <marker date="1506118937848" expanded="true" signature="199:898" ph="..." />
-            <marker date="1506118937848" expanded="true" signature="973:1310" ph="..." />
-            <marker date="1506118937848" expanded="true" signature="1377:1413" ph="{...}" />
-            <marker date="1506118937848" expanded="true" signature="1448:1531" ph="{...}" />
-            <marker date="1506118937848" expanded="true" signature="1564:1621" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -706,14 +680,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="289">
           <caret line="18" column="47" lean-forward="false" selection-start-line="18" selection-start-column="47" selection-end-line="18" selection-end-column="47" />
-          <folding>
-            <marker date="1506118937848" expanded="true" signature="172:1343" ph="{...}" />
-            <marker date="1506118937848" expanded="true" signature="199:898" ph="..." />
-            <marker date="1506118937848" expanded="true" signature="973:1310" ph="..." />
-            <marker date="1506118937848" expanded="true" signature="1377:1413" ph="{...}" />
-            <marker date="1506118937848" expanded="true" signature="1448:1531" ph="{...}" />
-            <marker date="1506118937848" expanded="true" signature="1564:1621" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -749,14 +715,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="7" column="0" lean-forward="false" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding>
-            <marker date="1506118937848" expanded="true" signature="172:1343" ph="{...}" />
-            <marker date="1506118937848" expanded="true" signature="199:898" ph="..." />
-            <marker date="1506118937848" expanded="true" signature="973:1310" ph="..." />
-            <marker date="1506118937848" expanded="true" signature="1377:1413" ph="{...}" />
-            <marker date="1506118937848" expanded="true" signature="1448:1531" ph="{...}" />
-            <marker date="1506118937848" expanded="true" signature="1564:1621" ph="{...}" />
-          </folding>
         </state>
       </provider>
     </entry>
@@ -847,37 +805,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/ajoutAbsence.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-136">
-          <caret line="285" column="26" lean-forward="false" selection-start-line="285" selection-start-column="26" selection-end-line="285" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/ListeAbsence.html.twig">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-59">
-          <caret line="265" column="37" lean-forward="false" selection-start-line="265" selection-start-column="37" selection-end-line="265" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Controller/AbsenceController.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-125">
-          <caret line="47" column="0" lean-forward="false" selection-start-line="47" selection-start-column="0" selection-end-line="47" selection-end-column="0" />
-          <folding>
-            <element signature="e#128#163#0#PHP" expanded="true" />
-            <marker date="1506648064786" expanded="true" signature="682:1115" ph="{...}" />
-            <marker date="1506648064786" expanded="true" signature="1113:1115" ph="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-78">
+        <state relative-caret-position="5321">
           <caret line="313" column="87" lean-forward="false" selection-start-line="313" selection-start-column="87" selection-end-line="313" selection-end-column="87" />
           <folding />
         </state>
@@ -885,8 +815,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/modifeEmploye.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="135">
+        <state relative-caret-position="4675">
           <caret line="275" column="61" lean-forward="false" selection-start-line="275" selection-start-column="61" selection-end-line="275" selection-end-column="61" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/autoload.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -901,8 +839,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Controller/DefaultController.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="296">
-          <caret line="88" column="51" lean-forward="false" selection-start-line="88" selection-start-column="51" selection-end-line="88" selection-end-column="51" />
+        <state relative-caret-position="1683">
+          <caret line="99" column="84" lean-forward="false" selection-start-line="99" selection-start-column="84" selection-end-line="99" selection-end-column="84" />
           <folding>
             <element signature="e#47#82#0#PHP" expanded="true" />
           </folding>
@@ -911,16 +849,58 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Entity/Employe.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="203">
+        <state relative-caret-position="952">
           <caret line="56" column="26" lean-forward="false" selection-start-line="56" selection-start-column="12" selection-end-line="56" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Repository/AbsenceRepository.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/ListeAbsence.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="265" column="37" lean-forward="false" selection-start-line="265" selection-start-column="37" selection-end-line="265" selection-end-column="37" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/ajoutAbsence.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-204">
+          <caret line="285" column="26" lean-forward="false" selection-start-line="285" selection-start-column="26" selection-end-line="285" selection-end-column="26" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Controller/AbsenceController.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="318">
+          <caret line="96" column="0" lean-forward="false" selection-start-line="96" selection-start-column="0" selection-end-line="96" selection-end-column="0" />
+          <folding>
+            <element signature="e#128#163#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Entity/Absence.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="119">
-          <caret line="7" column="4" lean-forward="false" selection-start-line="7" selection-start-column="4" selection-end-line="7" selection-end-column="4" />
+        <state relative-caret-position="202">
+          <caret line="108" column="28" lean-forward="false" selection-start-line="108" selection-start-column="20" selection-end-line="108" selection-end-column="28" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/EmploiyerBundle/Resources/views/Default/ListeAbsenceByemployer.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="549">
+          <caret line="271" column="48" lean-forward="false" selection-start-line="271" selection-start-column="48" selection-end-line="271" selection-end-column="48" />
           <folding />
         </state>
       </provider>

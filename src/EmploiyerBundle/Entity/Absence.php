@@ -5,9 +5,9 @@ namespace EmploiyerBundle\Entity;
 use Doctrine\ORM\Mapping as ORM;
 
 /**
- * absence
+ * Absence
  *
- * @ORM\Table(name="absence")
+ * @ORM\Table(name="Absence")
  * @ORM\Entity(repositoryClass="EmploiyerBundle\Repository\AbsenceRepository")
  */
 class Absence
@@ -22,10 +22,20 @@ class Absence
     private $id;
 
     /**
+     * @var int
+     *
+     * @ORM\Column(name="employe_id", type="integer")
+     */
+    private $employe_id;
+
+
+    /**
      * @ORM\ManyToOne(targetEntity="Employe")
      * @ORM\joinColumn(onDelete="cascade", nullable=true)
      */
+
     private $Employe;
+
 
 
     /**
@@ -33,6 +43,8 @@ class Absence
      *
      * @ORM\Column(name="debut", type="datetime")
      */
+
+
     private $debut;
 
     /**
@@ -187,5 +199,20 @@ class Absence
         $this->Employe = $Employe;
     }
 
+    /**
+     * @return int
+     */
+    public function getEmployeId ()
+    {
+        return $this->employe_id;
+    }
+
+    /**
+     * @param int $employe_id
+     */
+    public function setEmployeId ($employe_id)
+    {
+        $this->employe_id = $employe_id;
+    }
 }
 

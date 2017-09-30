@@ -72,13 +72,37 @@ class AbsenceController extends Controller
     public function ListeAbsenceAction ()
     {
 
-        $ListeAbsence=$this->getDoctrine()->getRepository("EmploiyerBundle:absence")->findAll();
+        $ListeAbsence=$this->getDoctrine()->getRepository("EmploiyerBundle:Absence")->findAll();
 
 
     return $this->render('EmploiyerBundle:Default:ListeAbsence.html.twig',
         array('listAbsence'=>$ListeAbsence));
     }
 
+
+    /**
+     * @route ("/ListeAbsence/{id}")
+     */
+
+    public function ListeAbsencByEempoyerAction ($id)
+    {
+        $employe=$this->getDoctrine()->getManager()->getRepository("EmploiyerBundle:Employe")->findOneBy
+        (array("id"=>$id));
+
+
+
+        $ListeAbsence=$this->getDoctrine()->getRepository("EmploiyerBundle:Absence")->findBy
+        (array('employe_id'=>$id));
+
+
+
+       //$dateFin=$ListeAbsence('debut')->g
+
+
+
+        return $this->render('EmploiyerBundle:Default:ListeAbsenceByemployer.html.twig',
+            array('listAbsence'=>$ListeAbsence,'emp'=>$employe));
+    }
 
 
 

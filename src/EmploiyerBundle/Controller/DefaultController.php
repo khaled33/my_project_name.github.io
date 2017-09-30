@@ -93,11 +93,13 @@ class DefaultController extends Controller
         $reponse=$this->getDoctrine()->getManager()->getRepository("EmploiyerBundle:Employe");
         $employer=$reponse->findOneBy(array('id'=>$id));
 
+        if ($employer){
         $em=$this->getDoctrine()->getManager();
         $em->remove($employer);
         $em->flush();
-
-        return $this->render('EmploiyerBundle:Default:supp.html.twig');
+      return $this->redirect('http://localhost/my_project_name/web/app_dev.php/index');
+        }
+      return $this->render('EmploiyerBundle:Default:supp.html.twig');
 
     }
 
