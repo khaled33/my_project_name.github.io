@@ -9,6 +9,7 @@
 namespace EmploiyerBundle\Controller;
 
 
+use DateTime;
 use EmploiyerBundle\Entity\Absence;
 use Symfony\Bundle\FrameworkBundle\Controller\Controller;
 
@@ -17,8 +18,7 @@ use Symfony\Component\Form\Extension\Core\Type\SubmitType;
 use Symfony\Component\Form\Extension\Core\Type\TextType;
 use Sensio\Bundle\FrameworkExtraBundle\Configuration\Route;
 use Symfony\Component\HttpFoundation\Request;
-
-
+use Symfony\Component\Validator\Constraints\Length;
 
 
 class AbsenceController extends Controller
@@ -53,16 +53,25 @@ class AbsenceController extends Controller
     $absence->setEmploye($employer);
 
 
+             $Debut=$absence->getDebut();
+             $Fin=$absence->getFin();
+             $interval = $Fin->diff($Debut);
+             $interval-> format('%R%a ');
+
+             $absence->setDiff($interval->days);
+
 
             $em=$this->getDoctrine()->getManager();
             $em->persist($absence);
             $em->flush();
 
-
-         return $this->redirect('http://localhost/my_project_name/web/app_dev.php/ListeAbsence');
+             return $this->redirect('http://localhost/my_project_name/web/app_dev.php/ListeAbsence');
         }
-        return $this->render('EmploiyerBundle:Default:ajoutAbsence.html.twig',array('form'=>$form->createView()));
+
+        return $this->render('EmploiyerBundle:Default:ajoutAbsence.html.twig',array
+        ('form'=>$form->createView()));
     }
+
 
 
     /**
@@ -76,7 +85,7 @@ class AbsenceController extends Controller
 
 
     return $this->render('EmploiyerBundle:Default:ListeAbsence.html.twig',
-        array('listAbsence'=>$ListeAbsence));
+            array('listAbsence'=>$ListeAbsence));
     }
 
 
@@ -89,17 +98,10 @@ class AbsenceController extends Controller
         $employe=$this->getDoctrine()->getManager()->getRepository("EmploiyerBundle:Employe")->findOneBy
         (array("id"=>$id));
 
-
-
         $ListeAbsence=$this->getDoctrine()->getRepository("EmploiyerBundle:Absence")->findBy
         (array('employe_id'=>$id));
 
-
-
-       //$dateFin=$ListeAbsence('debut')->g
-
-
-
+        
         return $this->render('EmploiyerBundle:Default:ListeAbsenceByemployer.html.twig',
             array('listAbsence'=>$ListeAbsence,'emp'=>$employe));
     }

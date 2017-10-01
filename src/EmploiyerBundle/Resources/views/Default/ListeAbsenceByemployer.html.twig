@@ -269,8 +269,7 @@
                 <td>{{ l.status }}</td>
                 <td>{{ l.debut|date("m/d/Y") }}</td>
                 <td>{{ l.fin  |date("m/d/Y") }}</td>
-                {% set difference = date(l.fin ).diff(date(l.debut)) %}
-                 <td>{{ difference|date("m/d/Y") }}</td>
+                <td>{{ l.diff }} jour</td>
 
             </tr>
             {% endfor %}

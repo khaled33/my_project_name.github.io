@@ -68,6 +68,12 @@ class Absence
      */
     private $status;
 
+    /**
+     *@var \int
+     *
+     *@ORM\Column(name="diff", type="integer", length=255)
+     */
+    private $diff;
     
     /**
      * Get id
@@ -214,5 +220,25 @@ class Absence
     {
         $this->employe_id = $employe_id;
     }
+
+    /**
+     * @return mixed
+     */
+    public function getDiff ()
+    {
+        return $this->diff;
+    }
+
+    /**
+     * @param mixed $diff
+     */
+    public function setDiff ($diff)
+    {
+        $this->diff = $diff;
+    }
+
+
+
+
 }
 
