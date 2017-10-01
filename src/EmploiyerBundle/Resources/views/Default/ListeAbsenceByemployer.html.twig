@@ -271,13 +271,20 @@
                 <td>{{ l.fin  |date("m/d/Y") }}</td>
                 <td>{{ l.diff }} jour</td>
 
+
             </tr>
             {% endfor %}
 
+            {% for l in listAbsence %}
+                 {% set somme=0 %}
+                    {%  set somme=somme+l.diff  %}
+                       nombre de jour D'Absence  toutal=  {{ somme }}
+            {% endfor %}
             </tbody>
         </table>
 
         </div>
+
 
     </div></div>
 <!-- /.content-wrapper -->

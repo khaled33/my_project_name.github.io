@@ -101,7 +101,7 @@ class AbsenceController extends Controller
         $ListeAbsence=$this->getDoctrine()->getRepository("EmploiyerBundle:Absence")->findBy
         (array('employe_id'=>$id));
 
-        
+
         return $this->render('EmploiyerBundle:Default:ListeAbsenceByemployer.html.twig',
             array('listAbsence'=>$ListeAbsence,'emp'=>$employe));
     }
