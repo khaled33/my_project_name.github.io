@@ -251,8 +251,7 @@
         <table class="table table-hover">
             <thead>
             <tr>
-                <th>Nom </th>
-                <th>prenom</th>
+
                 <th> Remarque</th>
                 <th>Status</th>
                 <th>Date Debut</th>
@@ -263,8 +262,7 @@
             <tbody>
             {% for l in listAbsence %}
             <tr>
-                <td>{{ l.Employe.nom }}</td>
-                <td> {{ l.Employe.prenom }}</td>
+
                 <td>{{ l.remarque }}</td>
                 <td>{{ l.status }}</td>
                 <td>{{ l.debut|date("m/d/Y") }}</td>
@@ -274,12 +272,9 @@
 
             </tr>
             {% endfor %}
+            nombre de jour D'Absence  toutal={{ somme }}
 
-            {% for l in listAbsence %}
-                 {% set somme=0 %}
-                    {%  set somme=somme+l.diff  %}
-                       nombre de jour D'Absence  toutal=  {{ somme }}
-            {% endfor %}
+
             </tbody>
         </table>
 

@@ -74,7 +74,7 @@ class Absence
      *@ORM\Column(name="diff", type="integer", length=255)
      */
     private $diff;
-    
+
     /**
      * Get id
      *
