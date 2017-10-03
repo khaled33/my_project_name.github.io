@@ -63,6 +63,13 @@ class Employe
      */
     private $nationalite;
 
+    /**
+     * @ORM\OneToMany(targetEntity="Mession" , mappedBy="Employe")
+     *
+     * @ORM\joinColumn(nullable=true)
+     */
+    private $Messions;
+
 
     /**
      * Get id
@@ -216,6 +223,22 @@ class Employe
     public function getNationalite()
     {
         return $this->nationalite;
+    }
+
+    /**
+     * @param mixed $Messions
+     */
+    public function setMessions ($Messions)
+    {
+        $this->Messions = $Messions;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getMessions ()
+    {
+        return $this->Messions;
     }
 }
 
