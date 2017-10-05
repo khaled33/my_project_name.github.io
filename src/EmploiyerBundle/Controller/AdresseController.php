@@ -40,7 +40,13 @@ class AdresseController extends Controller
             ->getForm();
 
         $form->handleRequest($request);
+         if ($form->isValid() && $form->isSubmitted()) {
+             $em = $this->getDoctrine()->getManager();
+             $em->persist($adresse);
+             $em->flush();
 
+             return $this->redirectToRoute('index');
+         }
 
         return $this->render("EmploiyerBundle:Default:AjoutAdresse.html.twig",
             array('form'=>$form->createView()));
