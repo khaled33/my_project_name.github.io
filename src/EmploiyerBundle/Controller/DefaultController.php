@@ -13,7 +13,7 @@ use Symfony\Component\HttpFoundation\Request;
 class DefaultController extends Controller
 {
 /**
-* @Route("/index")
+* @Route("/index" , name="index")
 */
 public function indexAction(Request $request)
 {
@@ -43,7 +43,7 @@ array('form' => $form->createView(), 'emp' => $employe));
 }
 
 /**
-* @Route ("/modifemployer/{id}", name="modifemployer")
+* @Route ("/modifemployer/{id}", name="modifemployer" ,requirements={"id": "\d+"})
 */
 public function modifAction($id, Request $request)
 {
@@ -67,7 +67,7 @@ $em = $this->getDoctrine()->getManager();
 $em->persist($employer);
 $em->flush();
 
-return $this->redirect('http://localhost/my_project_name/web/app_dev.php/index');
+return $this->redirectToRoute('index');
 }
 
 return $this->render('EmploiyerBundle:Default:modifeEmploye.html.twig',
@@ -75,7 +75,7 @@ array('form' => $form->createView()));
 }
 
 /**
-* @Route ("supprimmer/{id}" ,name="supprimmer")
+* @Route ("supprimmer/{id}" ,name="supprimmer" ,requirements={"id": "\d+"})
 */
 public function supprimerAction($id)
 {

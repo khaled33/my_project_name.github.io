@@ -18,7 +18,7 @@ use Symfony\Component\HttpFoundation\Request;
 class AbsenceController  extends Controller
 {
 /**
-* @Route("/ajoutAbsence/{id}" , name="ajoutAbsence")
+* @Route("/ajoutAbsence/{id}" , name="ajoutAbsence" ,requirements={"id": "\d+"})
 */
 public function ajoutAction(Request $request, $id)
 {
@@ -52,14 +52,14 @@ $em = $this->getDoctrine()->getManager();
 $em->persist($absence);
 $em->flush();
 
-return $this->redirect('http://localhost/my_project_name/web/app_dev.php/ListeAbsence');
+return $this->redirectToRoute('listAbcence');
 }
 
 return $this->render('EmploiyerBundle:Default:ajoutAbsence.html.twig', array('form' => $form->createView()));
 }
 
 /**
-* @route ("/ListeAbsence")
+* @route ("/ListeAbsence" ,name="listAbcence")
 */
 public function ListeAbsenceAction()
 {
@@ -70,7 +70,7 @@ array('listAbsence' => $ListeAbsence));
 }
 
 /**
-* @route ("/ListeAbsence/{id}")
+* @route ("/ListeAbsence/{id}" ,name="listeAbsenceBtId" ,requirements={"id": "\d+"})
 */
 public function ListeAbsencByEempoyerAction($id)
 {

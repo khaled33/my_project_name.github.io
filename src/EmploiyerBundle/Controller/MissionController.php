@@ -20,7 +20,7 @@ use Symfony\Component\HttpFoundation\Request;
 class MissionController  extends Controller
 {
 /**
-* @Route("/ajoutMission/{id}" , name="ajoutMission")
+* @Route("/ajoutMission/{id}" , name="ajoutMission",requirements={"id": "\d+"})
 */
 public function ajoutMission(Request $request, $id)
 {
@@ -52,7 +52,7 @@ $em = $this->getDoctrine()->getManager();
 $em->persist($messtion);
 $em->flush();
 
-return $this->redirect('http://localhost/my_project_name/web/app_dev.php/ListeMession');
+return $this->redirectToRoute('listeMission');
 }
 
 return $this->render('EmploiyerBundle:Default:ajoutMession.html.twig',
@@ -60,7 +60,7 @@ return $this->render('EmploiyerBundle:Default:ajoutMession.html.twig',
 }
 
     /**
-     * @Route("/ListeMission")
+     * @Route("/ListeMission" ,name="listeMission" )
      */
 
     public function ListeMessionAction(){
@@ -71,30 +71,7 @@ return $this->render('EmploiyerBundle:Default:ajoutMession.html.twig',
         return $this->render("EmploiyerBundle:Default:ListeMession.html.twig",array('list'=>$list));
     }
 
-    /**
-     * @Route("/AjoutAdresse")
-     */
 
-    public function AjoutAdresseAction(Request $request){
-
-       $adresse =new Adresse();
-
-       $form=$this->createFormBuilder($adresse)
-
-           ->add('numero',TextType::class)
-           ->add('rue',TextType::class)
-           ->add('codePostal',TextType::class)
-            ->add('ville',TextType::class)
-           ->add('valider',SubmitType::class)
-
-           ->getForm();
-
-           $form->handleRequest($request);
-
-
-        return $this->render("EmploiyerBundle:Default:AjoutAdresse.html.twig",
-            array('form'=>$form->createView()));
-    }
 
 
 }
