@@ -12,6 +12,6 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        return $this->render('BlogBundle:Default:index.html.twig',['t'=>'gggg']);
+        return $this->render('BlogBundle:Default:index.html.twig',['t'=>'hello world']);
     }
 }

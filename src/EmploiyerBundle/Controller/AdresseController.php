@@ -20,14 +20,15 @@ class AdresseController extends Controller
 {
 
     /**
-     * @Route("/AjoutAdresse")
-     * @param Request $request
-     * @return \Symfony\Component\HttpFoundation\Response
+     * @Route("/AjoutAdresse/{id}" , name="ajoutAbresse")
+     *
      */
 
-     public function AjoutAdresseAction(Request $request){
+     public function AjoutAdresseAction(Request $request,$id){
 
         $adresse =new Adresse();
+        $response=$this->getDoctrine()->getManager()->getRepository("EmploiyerBundle:Mession");
+        $mission=$response->findOneBy(array('id' => $id));
 
         $form=$this->createFormBuilder($adresse)
 
@@ -41,11 +42,13 @@ class AdresseController extends Controller
 
         $form->handleRequest($request);
          if ($form->isValid() && $form->isSubmitted()) {
+             $mission->setAdresse($adresse);
              $em = $this->getDoctrine()->getManager();
+             $em->persist($adresse);
              $em->persist($adresse);
              $em->flush();
 
-             return $this->redirectToRoute('index');
+             return $this->redirectToRoute('listeMission');
          }
 
         return $this->render("EmploiyerBundle:Default:AjoutAdresse.html.twig",

@@ -272,7 +272,7 @@
                 <td>{{ m.designation }}</td>
                 <td>{{ m.periode }}</td>
                 <td>{{ m.debut|date('d/m/y') }}</td>
-                <td>{% if m.Adresse== null %} <a href="{{ asset('') }}">ksss</a>{% endif %} {% else %}k</td>
+                <td>{% if m.Adresse== null %}  <a href="{{ path('ajoutAbresse', {"id":m.id} )}}"> ajout un adresse</a>{% endif %} {% if m.Adresse!= null %} {{ m.Adresse.ville }}  rue{{ m.Adresse.rue }} numero {{ m.Adresse.numero }} code postale={{ m.Adresse.codePostal }}{% endif %} </td>
 
             </tr>
 {% endfor %}
